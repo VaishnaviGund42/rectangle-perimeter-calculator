@@ -43,7 +43,10 @@ function calculatePerimeter() {
         resultDiv.innerHTML = "⚠️ Please enter both length and breadth!";
         return;
       }
-
+let perimeter = 2 * (parseFloat(length) + parseFloat(breadth));
+      resultDiv.style.display = "block";
+      resultDiv.innerHTML = `✅ Perimeter of Rectangle: <b>${perimeter} cm</b>`;
+    }
 
     
 </body>
