@@ -33,7 +33,17 @@
     
 
        
-    </script>
+function calculatePerimeter() {
+      let length = document.getElementById("length").value;
+      let breadth = document.getElementById("breadth").value;
+      let resultDiv = document.getElementById("result");
+
+      if (length === "" || breadth === "") {
+        resultDiv.style.display = "block";
+        resultDiv.innerHTML = "⚠️ Please enter both length and breadth!";
+        return;
+      }
+
 
     
 </body>
